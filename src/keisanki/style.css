@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,17 +15,18 @@ body {
 }
 
 .calculator {
-    background: #f5f5dc; /* クリーム色 */
+    background: #2c2c2c; /* ダークグレー */
     border-radius: 25px;
     padding: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     max-width: 350px;
     width: 100%;
+    border: 1px solid #404040;
 }
 
 .display {
-    background: #000;
-    color: #fff;
+    background: #1a1a1a;
+    color: #e8e8e8;
     font-size: 2.5rem;
     font-weight: 300;
     text-align: right;
@@ -38,6 +39,7 @@ body {
     justify-content: flex-end;
     overflow: hidden;
     word-wrap: break-word;
+    border: 1px solid #333;
 }
 
 #result {
@@ -78,31 +80,60 @@ body {
 }
 
 .btn.number {
-    background: #ffd700; /* 黄色 */
-    color: #000;
+    background: #404040; /* ダークグレー */
+    color: #e8e8e8;
+    border: 1px solid #555;
 }
 
 .btn.number:hover {
-    background: #ffed4e;
+    background: #4a4a4a;
 }
 
 .btn.operator {
-    background: #ff9500; /* オレンジ色 */
-    color: #fff;
+    background: #555555; /* ミディアムグレー */
+    color: #e8e8e8;
+    border: 1px solid #666;
 }
 
 .btn.operator:hover {
-    background: #ffad33;
+    background: #666666;
 }
 
 .btn.equals {
-    background: #ff9500;
-    color: #fff;
+    background: #6c7b7f; /* シックなブルーグレー */
+    color: #e8e8e8;
     grid-row: span 2;
+    border: 1px solid #7a8a8e;
+}
+
+.btn.equals:hover {
+    background: #7a8a8e;
 }
 
 .btn.zero {
     grid-column: span 2;
+}
+
+.brand-info {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #555;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e8e8e8;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.model-name {
+    font-size: 0.9rem;
+    color: #999;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 /* レスポンシブデザイン */
